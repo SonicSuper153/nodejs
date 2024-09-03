@@ -6,9 +6,11 @@ const server = http.createServer((req, res) => {
     // res.statueCode = 404;
     console.log(req.url);
     console.log(req.method);
-    res.writeHead(300, { 'Content-Type': 'text/html'})
+    res.writeHead(200, { 'Content-Type': 'text/html'})
     res.end('<h1>vdfgh</h1>');
 });
+
+app.post('/users',() => {})
 
 server.listen(PORT, () => {
     console.log(`sERVER RUNNING ON ${PORT}`)
